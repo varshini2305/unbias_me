@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Blog Analyzer Extension",
+    "version": "1.0",
+    "description": "Extract blog text from pages and analyze it via API.",
+    "icons": {
+      "16": "icons/eyes.png",
+      "48": "icons/eyes.png",
+      "128": "icons/eyes.png"
+    },
+    "permissions": ["activeTab", "scripting"],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  

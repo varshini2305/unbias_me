@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Blog Analyzer</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        min-width: 300px;
+        padding: 10px;
+      }
+      #critiqueDisplay {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 10px;
+        min-height: 100px;
+        overflow-y: auto;
+      }
+      #userInput {
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+      }
+      #analyzeBtn {
+        width: 100%;
+        padding: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Critique:</h3>
+    <div id="critiqueDisplay">Loading...</div>
+    <input type="text" id="userInput" placeholder="Blog text will appear here" />
+    <button id="analyzeBtn">Analyze</button>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
